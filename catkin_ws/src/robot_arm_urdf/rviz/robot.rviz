@@ -1,0 +1,23 @@
+global_options:
+  fixed_frame: base_link
+
+# Add RobotModel display
+RobotModel:
+  Class: rviz/RobotModel
+  Topic: robot_description
+
+# Add TF display
+TF:
+  Class: rviz/TF
+  LineStyle: 2
+  Color: 255;0;0
+
+# Add JointState display
+JointState:
+  Class: rviz/JointState
+  Topic: joint_states
+
+# Add MarkerArray display for visualizing links as markers
+Links:
+  Class: rviz/MarkerArray
+  Marker Topic: visualization_marker_array
